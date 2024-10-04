@@ -24,8 +24,8 @@ function App() {
       <Integrations />
       <Equipament /> {/* Asegúrate de agregar el componente aquí */}
       <MonitoringSystems />
-      <WebDevelopment />
       <Team />
+      <WebDevelopment />
       <Contact />
       <Footer />
     </div>
