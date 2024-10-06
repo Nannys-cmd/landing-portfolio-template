@@ -25,8 +25,8 @@ function App() {
       <Equipament /> {/* Asegúrate de agregar el componente aquí */}
       <MonitoringSystems />
       <Team />
-      <WebDevelopment />
       <Contact />
+      <WebDevelopment />
       <Footer />
     </div>
   );

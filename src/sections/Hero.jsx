@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './Hero.css';  // Estilos específicos para la Hero section
 
 const Hero = () => {

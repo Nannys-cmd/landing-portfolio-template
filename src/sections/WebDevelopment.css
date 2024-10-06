@@ -1,53 +1,53 @@
 /* src/sections/WebDevelopment.css */
 .web-development {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-    border: 1px solid #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .web-development h2 {
-    font-size: 2.5rem;
-    color: #ffd700; /* Dorado */
-    margin-bottom: 20px;
-  }
-  
-  .web-development p {
-    font-size: 1.2rem;
-    color: #cccccc;
-    margin-bottom: 30px;
-    line-height: 1.6;
-  }
-  
-  .web-development ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 600px;
-    text-align: left;
-  }
-  
-  .web-development ul li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #e0e0e0;
-    position: relative;
-    padding-left: 20px;
-  }
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+  padding: 40px 20px; /* Reducir el padding */
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Hacer la sombra más suave */
+}
 
-  .web-development ul li:before {
-    content: '✓'; /* Icono */
-    position: absolute;
-    left: 0;
-    color: #ffd700; /* Dorado */
-  }
-  
-  .profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
+.web-development h2 {
+  font-size: 2rem; /* Reducir el tamaño del título */
+  color: #ffd700;
+  margin-bottom: 20px; /* Reducir el margen inferior */
+}
+
+.web-development p {
+  font-size: 1rem; /* Reducir el tamaño del texto */
+  color: #cccccc;
+  margin-bottom: 20px; /* Menor margen inferior */
+  line-height: 1.4;
+}
+
+.web-development ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px; /* Reducir el ancho */
+  text-align: left;
+}
+
+.web-development ul li {
+  margin-bottom: 8px; /* Reducir el margen entre los ítems */
+  font-size: 0.9rem; /* Reducir el tamaño del texto */
+  color: #e0e0e0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.web-development ul li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+}
+
+.profile-photo {
+  width: 80px; /* Hacer la imagen más pequeña */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
