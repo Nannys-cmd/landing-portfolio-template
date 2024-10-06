@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import ghPages from 'vite-plugin-gh-pages';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), ghPages()],
-  base: '/wtics/', // Cambia 'wtics' por el nombre de tu repositorio
+  plugins: [react()],
+  base: 'https://github.com/Nannys-cmd/wtics', // Cambia 'wtics' por el nombre de tu repositorio
 });
-
