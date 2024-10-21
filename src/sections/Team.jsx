@@ -2,6 +2,7 @@
 import './Team.css';
 import alberto from '../assets/Alberto.jpg';
 import sebastian from '../assets/Sebastian.jpg';
+import daniela from '../assets/Daniela.jpg'; // Nueva imagen
 
 const Team = () => {
   return (
@@ -26,6 +27,15 @@ const Team = () => {
               en virtualización, soporte, storage y backups. Formación en soporte de infraestructura en ISTEA, 
               con cursos complementarios. Comprometido con garantizar la disponibilidad, seguridad de los sistemas 
               y la confiabilidad para el cliente.
+            </p>
+          </div>
+          <div className="team-member">
+            <img src={daniela} alt="Daniela Bastias" className="team-photo" />
+            <h3>Daniela Bastias</h3>
+            <p>
+              Desarrolladora Web y especialista en gestión de bases de datos, enfocada en brindar soluciones modernas, 
+              personalizadas y responsivas. Con experiencia en diseño de sitios web y gestión de bases de datos eficientes, 
+              Daniela ofrece un enfoque integral para el desarrollo digital de empresas.
             </p>
           </div>
         </div>

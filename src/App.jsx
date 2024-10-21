@@ -4,7 +4,6 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Services from './sections/Services';
 import Clients from './sections/Clients'; // Asegúrate de importar los componentes nuevos
-import WebDevelopment from './sections/WebDevelopment';
 import Integrations from './sections/Integrations'; // Asegúrate de importar los componentes nuevos
 import MonitoringSystems from './sections/MonitoringSystems'; // Asegúrate de importar los componentes nuevos
 import Equipament from './sections/Equipament'; // Asegúrate de importar el componente Equipament
@@ -26,7 +25,6 @@ function App() {
       <MonitoringSystems />
       <Team />
       <Contact />
-      <WebDevelopment />
       <Footer />
     </div>
   );
