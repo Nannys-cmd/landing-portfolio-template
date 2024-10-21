@@ -30,7 +30,7 @@ const Team = () => {
             </p>
           </div>
           <div className="team-member">
-            <img src={daniela} alt="Daniela Bastias" className="team-photo" />
+            <img src={daniela} alt="Daniela Bastias" className="team-photo small-photo" />
             <h3>Daniela Bastias</h3>
             <p>
               Desarrolladora Web y especialista en gestión de bases de datos, enfocada en brindar soluciones modernas, 
