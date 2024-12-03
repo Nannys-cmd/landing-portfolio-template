@@ -10,6 +10,31 @@
     color: #ffd700; /* Dorado */
     margin-bottom: 20px;
   }
+
+  .swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .swiper-slide img:hover {
+    transform: scale(1.1);
+  }
   
   .monitoring-systems p {
     font-size: 1.2rem;
