@@ -28,16 +28,7 @@ const Services = () => {
             </ul>
           </div>
           {/* Nueva tarjeta para Desarrollo Web */}
-          <div className="service-card">
-            <h3>Desarrollo Web</h3>
-            <ul>
-              <li>Desarrollo de sitios web responsivos</li>
-              <li>Diseño de bases de datos optimizadas</li>
-              <li>Implementación de sistemas de seguridad web</li>
-              <li>Integración de plataformas y APIs</li>
-              <li>Monitoreo y mantenimiento continuo</li>
-            </ul>
-          </div>
+
         </div>
       </div>
     </section>
