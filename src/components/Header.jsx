@@ -19,7 +19,6 @@ function Header() {
           <li><a href="#about">Nosotros</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#clients">Clientes</a></li>
-          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
       <div className="hamburger" onClick={toggleMenu}>

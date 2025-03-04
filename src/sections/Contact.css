@@ -12,14 +12,16 @@
 }
 
 .modal {
-  background: white;
+  background: #1a1a1a; /* Fondo oscuro */
+  color: #ffd700; /* Texto dorado */
   padding: 20px;
   border-radius: 8px;
   width: 400px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3); /* Sombra dorada */
   position: relative;
 }
 
+/* Botón de cierre */
 .close-button {
   position: absolute;
   top: 10px;
@@ -28,6 +30,11 @@
   border: none;
   font-size: 20px;
   cursor: pointer;
+  color: #ffd700; /* Dorado */
+}
+
+.close-button:hover {
+  color: #ffffff; /* Blanco al pasar el mouse */
 }
 
 .contact-form {
@@ -35,20 +42,59 @@
   flex-direction: column;
 }
 
+/* Campos del formulario */
 .form-group {
   margin-bottom: 15px;
 }
 
-.submit-button {
-  background: #25d366;
-  color: white;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
   padding: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
+  border: 1px solid #ffd700; /* Bordes dorados */
+  background: #333; /* Fondo gris oscuro */
+  color: #ffd700; /* Texto dorado */
   border-radius: 5px;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ffffff; /* Blanco al enfocar */
+}
+
+/* Botones */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.submit-button {
+  background: #ffd700; /* Dorado */
+  color: #1a1a1a; /* Texto oscuro */
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 .submit-button:hover {
-  background: #1ebd50;
+  background: #ffffff; /* Blanco */
+  color: #1a1a1a;
+}
+
+/* Botón de email */
+.email-button {
+  background: #ffd700;
+  color: #1a1a1a;
+}
+
+.email-button:hover {
+  background: #ffffff;
+  color: #1a1a1a;
 }

@@ -1,74 +1,86 @@
+/* Botón flotante */
 .floating-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25d366;
-  color: white;
+  background: #ffd700; /* Dorado */
+  color: #1a1a1a; /* Texto oscuro */
   border: none;
   padding: 15px 20px;
   font-size: 16px;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 6px rgba(255, 215, 0, 0.3); /* Sombra dorada */
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .floating-button:hover {
-  background: #1ebd50;
+  background: #ffffff; /* Blanco */
+  color: #1a1a1a;
 }
 
 /* Estilos del modal */
 .modal {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 500px;
-  }
-  
-  /* Botón de cierre */
-  .modal-close {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-  }
-  
-  /* Inputs y textarea */
-  input, textarea {
-    background-color: #333; /* Fondo gris oscuro */
-    border: 2px solid #25d366; /* Borde verde */
-    padding: 10px;
-    color: white; /* Texto blanco */
-    font-size: 16px;
-    width: 100%;
-    border-radius: 5px;
-    margin-top: 5px;
-  }
-  
-  /* Placeholder en gris claro */
-  input::placeholder,
-  textarea::placeholder {
-    color: #bbb;
-  }
-  
-  /* Botón de enviar */
-  .submit-button {
-    background: #25d366;
-    color: white;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .submit-button:hover {
-    background: #1ebd50;
-  }
+  background-color: #1a1a1a; /* Fondo oscuro */
+  color: #ffd700; /* Texto dorado */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3); /* Sombra dorada */
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Botón de cierre */
+.modal-close {
+  background: none;
+  border: none;
+  color: #ffd700;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.modal-close:hover {
+  color: #ffffff;
+}
+
+/* Inputs y textarea */
+input, textarea {
+  background-color: #333; /* Fondo gris oscuro */
+  border: 2px solid #ffd700; /* Borde dorado */
+  padding: 10px;
+  color: #ffd700; /* Texto dorado */
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Placeholder en gris claro */
+input::placeholder,
+textarea::placeholder {
+  color: #bbb;
+}
+
+/* Botón de enviar */
+.submit-button {
+  background: #ffd700; /* Dorado */
+  color: #1a1a1a; /* Texto oscuro */
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background: #ffffff; /* Blanco */
+  color: #1a1a1a;
+}

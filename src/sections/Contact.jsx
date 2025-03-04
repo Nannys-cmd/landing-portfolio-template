@@ -4,18 +4,31 @@ import "./Contact.css";
 const Contact = ({ isOpen, onClose }) => {
   if (!isOpen) return null; // Si el modal no está abierto, no se renderiza
 
-  const handleSubmit = (e) => {
+  const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const message = e.target.message.value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-    const phoneNumber = "5492616013999";
+    const whatsappNumber = "5491126194448";
     const whatsappMessage = `Hola, mi nombre es ${name}. Mi correo es ${email}. Mensaje: ${message}`;
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-    console.log("🔗 Enlace generado:", whatsappURL);
     window.open(whatsappURL, "_blank");
+  };
+
+  const handleEmailSubmit = (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const emailAddress = "adcante@wtics.com.ar";
+    const emailSubject = "Consulta desde la página web";
+    const emailBody = `Hola, mi nombre es ${name}.\nMi correo es ${email}.\n\nMensaje:\n${message}`;
+    const mailtoURL = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+    window.open(mailtoURL, "_blank");
   };
 
   return (
@@ -23,7 +36,7 @@ const Contact = ({ isOpen, onClose }) => {
       <div className="modal">
         <button className="close-button" onClick={onClose}>✖</button>
         <h2>Contacto</h2>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Nombre</label>
             <input type="text" id="name" name="name" required />
@@ -36,9 +49,14 @@ const Contact = ({ isOpen, onClose }) => {
             <label htmlFor="message">Mensaje</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit" className="submit-button">
-            <strong>Enviar por WhatsApp</strong>
-          </button>
+          <div className="button-group">
+            <button className="submit-button" onClick={handleWhatsAppSubmit}>
+              📱 Enviar por WhatsApp
+            </button>
+            <button className="submit-button email-button" onClick={handleEmailSubmit}>
+              📧 Enviar por Email
+            </button>
+          </div>
         </form>
       </div>
     </div>

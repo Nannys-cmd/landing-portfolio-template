@@ -1,10 +1,11 @@
-footer {
-  background-color: #1a1a1a; /* Fondo gris oscuro */
-  color: #ffd700; /* Texto dorado */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffd700;
   padding: 20px;
   display: flex;
-  justify-content: space-between; /* Divide el footer en dos secciones */
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-left {
@@ -14,30 +15,68 @@ footer {
 }
 
 .footer-left p {
-  margin: 0;
+  margin: 5px 0;
   font-size: 0.9rem;
 }
 
-.footer-left a {
-  color: #ffd700; /* Enlaces dorados */
+.footer-left a,
+.footer-right a {
+  color: #ffd700;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.footer-left a:hover {
+.footer-left a:hover,
+.footer-right a:hover {
   text-decoration: underline;
+  color: #ffffff;
 }
 
 .footer-right {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
-.footer-right a {
-  color: #ffd700; /* Enlaces dorados */
-  font-size: 1.5rem;
-  text-decoration: none;
+.back-to-top {
+  position: fixed;
+  bottom: 110px; /* Para que no se encime con el botón de contacto */
+  right: 20px;
+  background-color: #ffd700; /* Dorado */
+  color: #1a1a1a; /* Texto oscuro para contraste */
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.footer-right a:hover {
-  color: #ffffff; /* Texto blanco al pasar el mouse */
+.back-to-top:hover {
+  background-color: #fff; /* Blanco al pasar el mouse */
+  color: #1a1a1a;
+}
+
+/* Estilos para el botón de contacto */
+.floating-button {
+  position: fixed;
+  bottom: 50px; /* Ajustado para que no se encime */
+  right: 20px;
+  background-color: #ffd700; /* Dorado */
+  color: #1a1a1a; /* Texto oscuro */
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.floating-button:hover {
+  background-color: #fff; /* Blanco al pasar el mouse */
+  color: #1a1a1a;
 }
